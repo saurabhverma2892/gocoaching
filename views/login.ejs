@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Go Coaching" />
+    <meta name="author" content="saurabh.verma2892@gmail.com" />
+
+    <title>Go Coaching | Login</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+    <div class="main-container login" >
+        <div class="uk-grid" data-uk-grid>
+            <div class="uk-width-1-1 uk-text-center logo-container uk-flex uk-flex-middle uk-flex-center">
+                <img src="/images/logobig.png">
+            </div>
+            <div class="uk-width-1-1 uk-text-center">
+                <form class="uk-form" method="POST" action="/login">
+                    <div class="uk-form-row">
+                        <div class="uk-form-controls">
+                            <input type="text" placeholder="Username" class="uk-form-width-medium" name="username">
+                        </div>
+                    </div>
+                    <div class="uk-form-row">
+                        <div class="uk-form-controls">
+                            <input type="password" placeholder="Password" class="uk-form-width-medium" name="password">
+                        </div>
+                    </div>
+                    <div class="uk-form-row">
+                        <div class="uk-form-controls">
+                            <button type="submit" class="uk-button uk-button-primary uk-form-width-medium">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+</body>
+</html>

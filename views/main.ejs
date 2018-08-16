@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Go Coaching" />
+    <meta name="author" content="saurabh.verma2892@gmail.com" />
+
+    <title>Go Coaching</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+
+
+</head>
+<body ng-app="app">
+
+    <div class="main-container main-angular-container" >
+        <navbar></navbar>
+        <div class="uk-grid" data-uk-grid>
+            <div class="uk-width-1-6">
+                <sidenav></sidenav>
+            </div>
+            <div class="uk-width-5-6 main-content-container">
+                <div ui-view=""></div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <toast></toast>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+
+
+
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="/bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="/bower_components/angularUtils-pagination/dirPagination.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/bower_components/ngToast/dist/ngToast.min.js"></script>
+
+    <script type="text/javascript" src ="/app/app.js"></script>
+
+    <!-- directives -->
+    <script type="text/javascript" src="/app/directives/navbar/navbar.js"></script>
+    <script type="text/javascript" src="/app/directives/sidenav/sidenav.js"></script>
+
+    <script type="text/javascript" src="/app/controllers/active/active.js"></script>
+    <script type="text/javascript" src="/app/controllers/expired/expired.js"></script>
+    <script type="text/javascript" src="/app/controllers/low/low.js"></script>
+    <script type="text/javascript" src="/app/controllers/statistics/statistics.js"></script>
+
+</body>
+</html>
