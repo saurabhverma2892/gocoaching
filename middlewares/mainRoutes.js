@@ -13,7 +13,14 @@ module.exports = app => {
     }
 
     app.get("/", (req, res, next) => {
-        res.render("main");
+        if(req.session.login){
+            res.render("main");
+        }
+        else
+        {
+            res.redirect("/login");
+        }
+        
     });
 
     app.get("/login", (req,res,next)=>{
@@ -21,7 +28,13 @@ module.exports = app => {
     })
 
     app.post("/login", (req,res,next)=>{
+        req.session.login = true;
         res.redirect("/");
+    })
+
+    app.get("/logout",(req,res,next)=>{
+        req.session.login=false;
+        res.redirect("/login");
     })
 
 
