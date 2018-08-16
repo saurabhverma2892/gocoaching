@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm test",
     "start":"node_modules/.bin/sequelize db:migrate; node app",
-    "postinstall": "bower cache clean && bower install"
+    "postinstall": "bower cache clean && bower install --force-latest"
   },
   "keywords": [
     "busco",
